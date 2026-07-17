@@ -1,5 +1,5 @@
 body {/*全体の設定*/
-	font-size:14pt;
+	font-size: 14px;
 	background-color: #000000;
 	color:#FFFFFF;
 	font-family: "メイリオ", sans-serif ;
@@ -10,7 +10,7 @@ input{/* チェックの非表示 */ display:none; }
 label{margin:0.2em 0 ;}
 
 /* 属性ボタン */
-label img {	filter:grayscale(1); height:2.5em; margin: 0 0.5em;	}
+label img {	filter:grayscale(1); width:2.5em; margin: 0 0.5em;	}
 
 /* 選択時の設定 */
 input:checked + label.element img { filter:none; }
@@ -73,6 +73,10 @@ table th, table td  {width:0; white-space:nowrap;}
 table th img {/* 見出しアイコンサイズ */ width:3em; }
 table td img {/* キャラアイコンサイズ */ width:5em; margin:5px; }
 
-
+@media screen and (max-width: 1000px) { 
+	body { font-size:25px; }
+	label img{ width:4em; }
+	label.tags, label.Abi_ONOFF{ padding:1em;}
+}
 
 
