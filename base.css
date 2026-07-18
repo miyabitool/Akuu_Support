@@ -53,6 +53,6 @@ table td img {/* キャラアイコンサイズ */ width:5em; margin:5px; }
 @media screen and (max-width: 1000px) { 
 	body, button { font-size:25px; }
 	label img{ width:4em; }
-	label.tags, label.Abi_ONOFF{ padding:1em;}
+	label.tags, label.Abi_option, button{ padding:1em;}
 }
 
