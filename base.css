@@ -30,31 +30,13 @@ input:checked + label.tags { background-color:#0b0; color:#FFF; }
 input#Abi_ONOFF:checked ~ label.Abi_ONOFF { background-color:#0b0; color:#FFF; }
 
 /* 列の非表示 */
-col[class] {visibility:collapse;}
+th[class], td[class] {display:none;}
 
 /* 行の非表示 */
 tr.add_abi { display:none; }
 
 /* 選択されたタブの内容のみを表示 */
-#Hi:checked ~ table colgroup col.Hi,
-#Ice:checked ~ table colgroup col.Ice,
-#Kami:checked ~ table colgroup col.Kami,
-#Kaze:checked ~ table colgroup col.Kaze,
-#Zan:checked ~ table colgroup col.Zan,
-#Da:checked ~ table colgroup col.Da,
-#Totu:checked ~ table colgroup col.Totu ,
-#YAKUSOKU:checked ~ table colgroup col.YAKUSOKU ,
-#KAZOKU:checked ~ table colgroup col.KAZOKU ,
-#GAKUEN:checked ~ table colgroup col.GAKUEN ,
-#TSUIOKU:checked ~ table colgroup col.TSUIOKU ,
-#ALADIS:checked ~ table colgroup col.ALADIS ,
-#HALPHEN:checked ~ table colgroup col.HALPHEN ,
-#BRAWL:checked ~ table colgroup col.BRAWL ,
-#KNIGHT:checked ~ table colgroup col.KNIGHT ,
-#DOKUSHO:checked ~ table colgroup col.DOKUSHO ,
-#RYOURI:checked ~ table colgroup col.RYOURI ,
-#FUKUTSU:checked ~ table colgroup col.FUKUTSU ,
-#SHINSEI:checked ~ table colgroup col.SHINSEI  { visibility:visible; }
+table th.von , table td.von { display:table-cell; }
 
 #Abi_ONOFF:checked ~ table tbody tr.add_abi { display:table-row; }
 
@@ -62,12 +44,12 @@ table, td, th {/*テーブルの枠線*/
 	border: 2px #555 solid;
 	border-collapse:collapse;
 }
-table {width:100%;}
+//table {width:100%;}
 
 th{/*表目次の設定*/
 	font-weight:bold;
 	background-color: #333;
-	position: sticky; top: 0; /* スクロール固定 */
+//	position: sticky; top: 0; /* スクロール固定 */
 }
 table th, table td  {width:0; white-space:nowrap;}
 table th img {/* 見出しアイコンサイズ */ width:3em; }
