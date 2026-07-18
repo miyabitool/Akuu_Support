@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
 	<script src="js/elem2img.js"></script>
-
 </head>
 
 <body>
@@ -252,12 +251,9 @@ function elem2img_demo () {
 	e2i.get_jpeg(function (img_data) {
 		Elem2Img.save_image(img_data, "img.jpg");
 	}, elem, scale, quality);
-
 }
 </script>
-<button type="button" onclick="elem2img_demo();" style="width: 150px; margin: 5px; font-size: 20px;">画像に変換</button>
-
-<div id="demo_img_area"></div>
+<button type="button" onclick="elem2img_demo();" style="width: 150px; margin: 5px; font-size: 20px;">画像として保存</button>
 
 <script>
   // すべてのチェックボックスを取得
