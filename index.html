@@ -3,7 +3,22 @@
 <head>
 	<title>レスレリ　亜空サポート</title>
 	<meta charset="UTF-8">
-	<meta name=”viewport” content=”width=device-width, initial-scale=1″> 
+	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
+
+<script src="js/elem2img.js"></script>
+
+<script>
+
+function elem2img_demo () {
+var elem = document.getElementById("target");
+var file_name = "Sample.png";
+var scale = 1;
+var quality = 100;
+
+var e2i = new Elem2Img();
+e2i.save_png(elem, file_name, scale, quality);}
+</script>
+
 </head>
 
 <body>
@@ -261,6 +276,10 @@
 </table>
 
 <label class="Abi_ONOFF" for="Abi_ONOFF">すべてのアビリティを表示</label>
+
+<br>
+<button onclick="elem2img_demo();" >画像としてダウンロード</button><br>
+
 
 </body>
 

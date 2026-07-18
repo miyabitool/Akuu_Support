@@ -73,10 +73,22 @@ table th, table td  {width:0; white-space:nowrap;}
 table th img {/* 見出しアイコンサイズ */ width:3em; }
 table td img {/* キャラアイコンサイズ */ width:5em; margin:5px; }
 
+button {
+	padding:0.5em;
+	display:inline-block;
+	border-radius:18px;
+	/* 非選択時の設定 */
+	background-color:#BBB;
+	color:#000;
+	font-size: 14px;
+	font-weight:bold;
+}
+
 @media screen and (max-width: 1000px) { 
-	body { font-size:25px; }
+	body, table, button { font-size:25px; }
 	label img{ width:4em; }
 	label.tags, label.Abi_ONOFF{ padding:1em;}
+	table td img{ width:6em;}
 }
 
 
