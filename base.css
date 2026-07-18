@@ -16,7 +16,7 @@ label img {	filter:grayscale(1); width:2.5em; margin: 0 0.5em;	}
 input:checked + label.element img { filter:none; }
 
 /* タグボタン */
-label.tags, label.Abi_ONOFF{
+label.tags, label.Abi_option, button{
 	padding:0.5em;
 	display:inline-block;
 	border-radius:18px;
@@ -27,50 +27,32 @@ label.tags, label.Abi_ONOFF{
 
 /* 選択時の設定 */
 input:checked + label.tags { background-color:#0b0; color:#FFF; }
-input#Abi_ONOFF:checked ~ label.Abi_ONOFF { background-color:#0b0; color:#FFF; }
+input#Abi_option:checked ~ label.Abi_option { background-color:#0b0; color:#FFF; }
 
 /* 列の非表示 */
-th[class], td[class] {display:none;}
-
-/* 行の非表示 */
-tr.add_abi { display:none; }
+th[class], td[class], tr.Abi_option {display:none;}
 
 /* 選択されたタブの内容のみを表示 */
 table th.von , table td.von { display:table-cell; }
-
-#Abi_ONOFF:checked ~ table tbody tr.add_abi { display:table-row; }
+table tr.von {display:table-row;}
 
 table, td, th {/*テーブルの枠線*/
-	border: 2px #555 solid;
+	border: 2px #888 solid;
 	border-collapse:collapse;
 	color:#FFF;
 }
-//table {width:100%;}
 
 th{/*表目次の設定*/
 	font-weight:bold;
 	background-color: #333;
-//	position: sticky; top: 0; /* スクロール固定 */
 }
 table th, table td  {width:0; white-space:nowrap;}
 table th img {/* 見出しアイコンサイズ */ width:3em; }
 table td img {/* キャラアイコンサイズ */ width:5em; margin:5px; }
-
-button {
-	padding:0.5em;
-	display:inline-block;
-	border-radius:18px;
-	/* 非選択時の設定 */
-	background-color:#BBB;
-	color:#000;
-	font-size: 14px;
-	font-weight:bold;
-}
 
 @media screen and (max-width: 1000px) { 
 	body, button { font-size:25px; }
 	label img{ width:4em; }
 	label.tags, label.Abi_ONOFF{ padding:1em;}
 }
-
 
