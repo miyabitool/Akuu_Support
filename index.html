@@ -33,7 +33,7 @@
 	<input id="SHINSEI" type="checkbox"><label class="tags" for="SHINSEI">新星</label>
 
 <!-- アビリティの表示切替 -->
-	<input id="Abi_ONOFF" type="checkbox">
+	<input id="Abi_option" type="checkbox">
 
 <br>
 <table id="tlist">
@@ -170,7 +170,7 @@
 		<td class="FUKUTSU"><!--不屈の心意気--></td>
 		<td class="SHINSEI"><!--新星--></td>
 	</tr>
-	<tr class="add_abi">
+	<tr class="Abi_option">
 		<th>ディフェンダー<br>被弾時<br>HP回復</th>
 		<td class="Hi"><!--火--><img src="Icon/0037b.png"><img src="Icon/0146.png"></td>
 		<td class="Ice"><!--氷--><img src="Icon/0019.png"><img src="Icon/0125.png"></td>
@@ -192,7 +192,7 @@
 		<td class="FUKUTSU"><!--不屈の心意気--></td>
 		<td class="SHINSEI"><!--新星--></td>
 	</tr>
-	<tr class="add_abi">
+	<tr class="Abi_option">
 		<th>被HP回復</th>
 		<td class="Hi"><!--火--><img src="Icon/0063.png"><img src="Icon/0074.png"></td>
 		<td class="Ice"><!--氷--><img src="Icon/0073.png"><img src="Icon/0100.png"></td>
@@ -214,7 +214,7 @@
 		<td class="FUKUTSU"><!--不屈の心意気--></td>
 		<td class="SHINSEI"><!--新星--><img src="Icon/1015.png"></td>
 	</tr>
-	<tr class="add_abi">
+	<tr class="Abi_option">
 		<th>与HP回復</th>
 		<td class="Hi"><!--火--><img src="Icon/0010.png"></td>
 		<td class="Ice"><!--氷--><img src="Icon/0047.png"></td>
@@ -239,7 +239,7 @@
 	</tbody>
 </table>
 
-<label class="Abi_ONOFF" for="Abi_ONOFF">すべてのアビリティを表示</label>
+<label class="Abi_option" for="Abi_option">すべてのアビリティを表示</label>
 
 <script>
 function elem2img_demo () {
@@ -253,7 +253,8 @@ function elem2img_demo () {
 	}, elem, scale, quality);
 }
 </script>
-<button type="button" onclick="elem2img_demo();" style="width: 150px; margin: 5px; font-size: 20px;">画像として保存</button>
+
+<br><button type="button" onclick="elem2img_demo();">画像として保存</button>
 
 <script>
   // すべてのチェックボックスを取得
