@@ -4,7 +4,6 @@
 	<title>レスレリ　亜空サポート</title>
 	<meta charset="UTF-8">
 	<meta name=”viewport” content=”width=device-width, initial-scale=1″>
-	<script src="js/elem2img.js"></script>
 </head>
 
 <body>
@@ -36,14 +35,6 @@
 	<input id="Abi_ONOFF" type="checkbox">
 
 <br>
-<script>
-function elem2img_demo () {
-    var e2i = new Elem2Img();
-    e2i.get_png(function (img_data) {
-        document.getElementById("demo_img").innerHTML = "<img src='" + img_data + "'>";
-    },  document.getElementById("target"));
-}
-</script>
 <table id="target">
 	<colgroup>
 		<col></col>
@@ -270,11 +261,6 @@ function elem2img_demo () {
 </table>
 
 <label class="Abi_ONOFF" for="Abi_ONOFF">すべてのアビリティを表示</label>
-
-<br>
-
-<button onclick="elem2img_demo();" >画像としてダウンロード</button><br>
-<div id="demo_img"></div>
 
 </body>
 
