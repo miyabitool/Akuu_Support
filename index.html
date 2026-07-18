@@ -40,8 +40,8 @@
 function elem2img_demo () {
     var e2i = new Elem2Img();
     e2i.get_png(function (img_data) {
-        document.getElementById("target").innerHTML = "<img src='" + img_data + "'>";
-    },  document.getElementById("demo_img"));
+        document.getElementById("demo_img").innerHTML = "<img src='" + img_data + "'>";
+    },  document.getElementById("target"));
 }
 </script>
 <table id="target">
