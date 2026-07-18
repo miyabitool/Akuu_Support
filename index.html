@@ -36,6 +36,14 @@
 	<input id="Abi_ONOFF" type="checkbox">
 
 <br>
+<script>
+function elem2img_demo () {
+    var e2i = new Elem2Img();
+    e2i.get_png(function (img_data) {
+        document.getElementById("target").innerHTML = "<img src='" + img_data + "'>";
+    },  document.getElementById("demo_img"));
+}
+</script>
 <table id="target">
 	<colgroup>
 		<col></col>
@@ -264,17 +272,9 @@
 <label class="Abi_ONOFF" for="Abi_ONOFF">すべてのアビリティを表示</label>
 
 <br>
-<script>
-	function elem2img_demo () {
-		var elem = document.getElementById("target");
-		var file_name = "img.png";
-		var scale = 1;
-		var quality = 100;
-		var e2i = new Elem2Img();
-		e2i.save_png(elem, file_name, scale, quality);}
-</script>
-<button onclick="elem2img_demo();" >画像としてダウンロード</button><br>
 
+<button onclick="elem2img_demo();" >画像としてダウンロード</button><br>
+<div id="demo_img"></div>
 
 </body>
 
