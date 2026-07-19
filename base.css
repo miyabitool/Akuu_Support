@@ -10,7 +10,7 @@ input{/* チェックの非表示 */ display:none; }
 label{margin:0.2em 0 ;}
 
 /* 属性ボタン */
-label img {	filter:grayscale(1); width:2.5em; margin: 0 0.5em;	}
+label img {	filter:grayscale(1); width:2.5em; margin: 0 0.5em; }
 
 /* 選択時の設定 */
 input:checked + label.element img { filter:none; }
